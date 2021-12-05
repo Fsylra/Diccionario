@@ -47,11 +47,11 @@ body {
     transition: 0.3s ease;
 }
 .search input:focus {
-    border: 2px solid #b3e2ae;
+    border: 2px solid #8db489;
     transition: 0.3s ease;
 }
 .search input:focus ~ i {
-    color: #b3e2ae;
+    color: #8db489;
     transition: 0.3s ease;
 }
 .search input::placeholder {
