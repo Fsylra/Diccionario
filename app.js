@@ -1,5 +1,6 @@
 const wrapper = document.querySelector(".wrapper"),
-searchInput = wrapper.querySelector("input");
+searchInput = wrapper.querySelector("input"),
+synonyms = wrapper.querySelector(".synonyms .list"),
 infoText = wrapper.querySelector(".info-text");
 
 
@@ -18,6 +19,18 @@ function data(result, word) {
         document.querySelector(".word span").innerText = phonetics;
         document.querySelector(".meaning span").innerText = definitions.definition;
         document.querySelector(".example span").innerText = definitions.example;
+        
+
+        if (definitions.synonyms[0] == undefined){
+            synonyms.parentElement.style.display = "none";
+        }else {
+            synonyms.parentElement.style.display = "block";
+            synonyms.innerHTML = "";
+            for (let i = 0; i < 5; i++) { 
+                let tag =`<span>${definitions.synonyms[i]},</span>`;
+                synonyms.insertAdjacentHTML("beforeend", tag);
+            }
+        }
     }
     
 }

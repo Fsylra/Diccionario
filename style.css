@@ -12,16 +12,16 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: rgb(240, 234, 214);
+    background: #b3e2ae;
 }
 
 .wrapper {
     width: 85%;
-    background-color: rgba(255, 255, 255, 0.767);
+    background-color: rgba(255, 255, 255, 0.883);
     border: 2px solid #ffffff;
     border-radius: 25px;
     padding: 28px 28px 45px;
-    box-shadow: 0px 8px 21px -5px rgba(206, 193, 155, 0.77);
+    box-shadow: 0px 0px 25px 3px rgba(255, 255, 255, 0.329);
 }
 
 .wrapper header {
@@ -47,11 +47,11 @@ body {
     transition: 0.3s ease;
 }
 .search input:focus {
-    border: 2px solid rgb(230, 206, 130);
+    border: 2px solid #b3e2ae;
     transition: 0.3s ease;
 }
 .search input:focus ~ i {
-    color: rgb(230, 206, 130);
+    color: #b3e2ae;
     transition: 0.3s ease;
 }
 .search input::placeholder {
@@ -145,7 +145,7 @@ ul .word i {
 
 .content li .details {
     padding-left: 10px;
-    border-left: 4px solid rgb(230, 206, 130);
+    border-left: 4px solid rgb(195, 241, 173);
     border-radius: 4px 0 0 4px;
 }
 
